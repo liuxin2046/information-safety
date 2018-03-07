@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+        font-size: 22px;
+    }
+        #box{
+        width: 400px;
+        height: 300px;
+        border: 1px solid #f0f0f0;
+        margin: 50px auto;
+        
+        
+    }
+   table{
+       margin: 25px auto;
+   }
+   h3{
+       margin-top: 10px;
+       text-align: center;
+   }
+   table tr{
+       line-height: 35px;
+   }
+    
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h3>凯撒密码</h3>
+        <table>
+            <tr><td><span>明文:</span></td><td><input type="text" name="plainText" id="plainText"></td><td><button id="btn1">加密</button></td></tr>
+            <tr><td><span>密文:</span></td><td><input type="text" name="cipherText" id="cipherText"></td><td><button id="btn2">解密</button></td></tr>
+            <tr><td><span>结果:</span></td><td><input type="text" name="finalText" id="finalText"></td></tr>
+        </table>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
