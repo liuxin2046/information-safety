@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>one_Code</title>
+    <style>
+    #alice{
+        margin-top: 60px;
+        width:400px;
+        height:250px;
+        border: 1px solid red;
+        text-align: center;
+        float: left;
+        margin-left: 100px;
+    }
+    #alice table{
+        margin: 0 auto;
+    }
+    #Bob{
+        margin-top: 60px;
+        width:400px;
+        height:250px;
+        border: 1px solid rgb(0, 140, 255);
+        text-align: center;
+        float: right;
+        margin-right: 100px;
+    }
+    #Bob table{
+        margin: 0 auto;
+    }
+    </style>
+</head>
+<body>
+    <div id="alice">
+        <h3>Alice</h3>
+        <table>
+            <tr><td><label>请输入明文: </label><input type="text" id="plainText"></td><td><button id="get_code">转成二进制</button></td></tr>
+            <tr><td><label>明文二进制: </label><input type="text" id="plain_code"></td></tr>
+            <tr><td><label>输入的密钥: </label><input type="text" id="key"></td><td><button id="set_code">生成二进制</button></td></tr>
+            <tr><td><label>密文二进制: </label><input type="text" id="cipher_code"></td><td><button id="set_cipher">生成的密文</button></td></tr>
+            <tr><td><label>密文的内容: </label><input type="text" id="cipherText"></td></tr>
+        </table>
+    </div>
+    <div id="Bob">
+        <h3>Bob</h3>
+        <table>
+            <tr><td><label>请输入密文: </label><input type="text" id="e_cipherText"></td></tr>
+            <tr><td><label>输入的密钥: </label><input type="text" id="e_key"></td><td><button id="set_plain">生成明文</button></td></tr>
+            <tr><td><label>明文的内容: </label><input type="text" id="e_plainText"></td></tr>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
