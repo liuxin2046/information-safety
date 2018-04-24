@@ -1,0 +1,16 @@
+
+	下载地址：
+	https：//github.com/AlessandroZ/LaZagne/releases/
+	用法：（所有的操作先进入文件的所在目录）
+	启动所有的模块：
+	laZagne.exe all 
+	值启动一个特定的模块
+	laZagne.exe browsers
+	只启动特定的软件脚本
+	laZagne.exe browsers -firefox
+	将所有找到的密码写入文件（对于普通txt，-oN，对于Json，-oJ，对于全部，-oA）。注意：如果解析JSON结果写成多行字符串时出现问题，请选中此项。
+	laZagne.exe all -oN
+	laZagne.exe all -oA -output C:\Users\test\Desktop
+	得到帮助
+	laZagne.exe -h
+	laZagne.exe browsers -h
